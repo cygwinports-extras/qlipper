@@ -1,0 +1,10 @@
+--- origsrc/qlipper-2.0.2/cmake/FindQxt.cmake	2013-07-29 12:10:54.000000000 -0500
++++ src/qlipper-2.0.2/cmake/FindQxt.cmake	2014-06-08 22:06:41.831947900 -0500
+@@ -22,6 +22,7 @@ ELSE (WIN32)
+     FIND_PATH( QXT_INCLUDE_PATH QxtCore
+         /usr/include
+         /usr/include/qxt
++        /usr/include/qt4
+         /usr/local/include
+         /sw/include
+         /opt/local/include

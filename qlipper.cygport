@@ -1,0 +1,14 @@
+inherit qt4-cmake
+
+NAME="qlipper"
+VERSION=2.0.2
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Qt clipboard manager"
+DESCRIPTION="Lightweight and cross-platform clipboard history applet. This
+application is a part of QtDesktop project."
+HOMEPAGE="https://code.google.com/p/qlipper/"
+SRC_URI="https://qlipper.googlecode.com/files/qlipper-${VERSION}.tar.bz2"
+PATCH_URI="2.0.2-system-qxt.patch"
+
+CYGCMAKE_ARGS="-DUSE_SYSTEM_QTSA=OFF"
